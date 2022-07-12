@@ -97,4 +97,4 @@ contract CryptoDevs is ERC721Enumerable,Ownable{
   fallback () external payable {}
 }
 
-// Crypto Devs deployed at: 0xf151e85Ad74Ac538129e0b7166D7aa09b6C17Ff1
+// Crypto Devs deployed at: 0x032BC7a590490F9d152cb2e479F846ac0D45Fc67
