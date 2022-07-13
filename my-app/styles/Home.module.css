@@ -13,7 +13,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: #571f4e;
+  background-color: #662e9b;
 }
 
 .image {
@@ -35,7 +35,7 @@
 
 .button {
   border-radius: 4px;
-  background-color: blue;
+  background-color: #662e9b;
   border: none;
   color: #ffffff;
   font-size: 15px;
