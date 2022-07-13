@@ -36,7 +36,6 @@ export default function Home() {
         // value signifies the cost of one crypto dev which is "0.01" eth.
         // We are parsing `0.01` string to ether using the utils library from ethers.js
         value: utils.parseEther("0.01"),
-        gasLimit: 400000,
       });
       setLoading(true);
       // wait for the transaction to get mined
@@ -63,7 +62,6 @@ export default function Home() {
         // value signifies the cost of one crypto dev which is "0.01" eth.
         // We are parsing `0.01` string to ether using the utils library from ethers.js
         value: utils.parseEther("0.01"),
-        gasLimit: 400000,
       });
       setLoading(true);
       // wait for the transaction to get mined
@@ -233,9 +231,9 @@ export default function Home() {
 
     // If user is not connected to the Rinkeby network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 5) {
-      window.alert("Change the network to Goerli");
-      throw new Error("Change network to Goerli");
+    if (chainId !== 4) {
+      window.alert("Change the network to Rinkeby");
+      throw new Error("Change network to Rinkeby");
     }
 
     if (needSigner) {
@@ -356,7 +354,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}> &#128591; Welcome to Crypto Devs!</h1>
+          <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
           <div className={styles.description}>
             Its an NFT collection for developers in Crypto.
           </div>
@@ -371,7 +369,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#128154; by Crypto Devs
+        Made with &#10084; by Crypto Devs
       </footer>
     </div>
   );
