@@ -59,6 +59,8 @@ contract CryptoDevs is ERC721Enumerable,Ownable{
 
     require(msg.value >= _price,"Not sufficent balance to mint token");
 
+    tokenIds += 1;
+
     _safeMint(msg.sender,tokenIds);
    }
 /////////////////////////////////////////////////////////////////////////////////////
@@ -72,6 +74,8 @@ contract CryptoDevs is ERC721Enumerable,Ownable{
     require(tokenIds < maxTokenIds,"All tokens are minted");
 
     require(msg.value >= _price,"Not sufficent balance to mint token");
+
+    tokenIds += 1;
 
     _safeMint(msg.sender,tokenIds);
    }
@@ -97,4 +101,4 @@ contract CryptoDevs is ERC721Enumerable,Ownable{
   fallback () external payable {}
 }
 
-// Crypto Devs deployed at: 0xb19cF463144465E52bf235ED9C8F858ce2438a40
+// Crypto Devs deployed at: 0xEAbF879bD0a4fE25Aa0dD2C3E1161916623f0F9b
