@@ -36,6 +36,7 @@ export default function Home() {
         // value signifies the cost of one crypto dev which is "0.01" eth.
         // We are parsing `0.01` string to ether using the utils library from ethers.js
         value: utils.parseEther("0.01"),
+        gasLiimit: 400000,
       });
       setLoading(true);
       // wait for the transaction to get mined
@@ -62,6 +63,7 @@ export default function Home() {
         // value signifies the cost of one crypto dev which is "0.01" eth.
         // We are parsing `0.01` string to ether using the utils library from ethers.js
         value: utils.parseEther("0.01"),
+        gasLiimit: 400000,
       });
       setLoading(true);
       // wait for the transaction to get mined
@@ -252,7 +254,7 @@ export default function Home() {
       // Assign the Web3Modal class to the reference object by setting it's `current` value
       // The `current` value is persisted throughout as long as this page is open
       web3ModalRef.current = new Web3Modal({
-        network: "rinkeby",
+        network: "goerli",
         providerOptions: {},
         disableInjectedProvider: false,
       });
